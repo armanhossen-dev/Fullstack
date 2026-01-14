@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #212121;
+    color: white;
+}
+
+.cent{
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.googlelogo{
+    display: inline-flex;
+    justify-content: center;
+    width: 300px;
+    margin-bottom: 30px;
+}
+
+.googleSearch{
+    background-color: #4e5257;
+    border: none;
+    width: 750px;
+    height: 50px;
+    border-radius: 30px;
+}
+
+.btnA{
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #2f3033;
+    border: 1px solid #212121;
+}
+
+.btnA:hover{
+    border: 1px solid rgba(255, 255, 255, 0.206);
+}
