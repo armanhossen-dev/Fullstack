@@ -47,6 +47,20 @@ nav ul li a{
     text-decoration: none;
 }
 
+main{
+    width: 100vw;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+
+}
+
+
+
+
+
 .cent{
     width: 100%;
     display: inline-flex;
@@ -61,13 +75,35 @@ nav ul li a{
     margin-bottom: 10px;
 }
 
+
+.googleSearch:hover,
+.googleSearch:active{
+    background-color: #89919a;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.googleSearch:hover{
+    background-color: #89919a;
+}
+
 .googleSearch{
     background-color: #4e5257;
-    border: none;
     width: 620px;
     height: 50px;
+    border: none;
     border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 16px;    
+
+
+    border: none;
+    outline: none;
+    box-shadow: none;
 }
+
+
 
 .btnA{
     padding: 8px 12px;
