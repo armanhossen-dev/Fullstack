@@ -1,9 +1,10 @@
 *{
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
     background-color: #212121;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 body{
@@ -25,7 +26,6 @@ nav ul{
     list-style: none;
     gap: 15px;
     padding: 15px 12px;
-    margin: 0;
 }
 
 nav ul li i{
@@ -40,7 +40,6 @@ nav ul li img{
     background-repeat: no-repeat;
 }
 
-
 nav ul li img.user{ 
      /* image can not have child so .user is  not spaced with img(img .user)X => its(img.user) */
     width: 32px;
@@ -54,12 +53,11 @@ nav ul li a{
 
 main{
     width: 100vw;
-    height: 80vh;
+    height: 90vh;
     justify-content: center;
     align-items: center;
     align-content: center;
-
-
+    /* background-color: aqua; */
 }
 
 .cent{
@@ -69,24 +67,21 @@ main{
 }
 
 .googlelogo{
-    margin-top: 10%;
     display: inline-flex;
     justify-content: center;
-    width: 300px;
-    margin-bottom: 10px;
+    width: 280px;
+    cursor: pointer;
+    filter: grayscale(1) contrast(103%) brightness(1.1);
+    transition: .2s all ease-in-out;    
+    /*  filter: brightness(0) invert(1);        to make the logo look white if png */
 }
 
-
-.googleSearch:hover,
-.googleSearch:active{
-    background-color: #89919a;
-    border: none;
-    outline: none;
-    box-shadow: none;
+.googlelogo.active{
+    filter: none;
 }
 
-.googleSearch:hover{
-    background-color: #89919a;
+.googlelogo:hover{
+    filter: none;
 }
 
 .googleSearch{
@@ -97,17 +92,21 @@ main{
     border-radius: 30px;
     padding: 10px 20px;
     font-size: 16px;    
+    outline: none;
+    box-shadow: none;
+    margin-top: 30px;
+}
 
-
+.googleSearch:hover,
+.googleSearch:active{
+    background-color: #89919a;
     border: none;
     outline: none;
     box-shadow: none;
 }
 
-
-
 .btnA{
-    padding: 8px 12px;
+    padding: 10px 15px;
     border-radius: 10px;
     background-color: #2f3033;
     border: 1px solid #212121;
@@ -120,7 +119,6 @@ main{
     border: 1px solid rgba(255, 255, 255, 0.206);
 }
 
-
 .translatepage{
     font-size: 12px;
 }
@@ -129,33 +127,29 @@ main{
     color: #99c4ff;
 }
 
-
 /*footer*/
 footer{
     position: fixed;
+    width: 100vw;
     bottom: 0;
     display: flex;
+    font-size: 15px;
     flex-direction: column;
-    
 }
 
 .country p{
-    width: 100vw;
     padding: 15px 30px;
-    font-size: 15px;
     background-color: #171717;
     border-bottom: 1px solid #454746;
 }
 
 .footerlinks{
-    font-size: 15px;
-    width: 100vw;
-    padding: 15px;
+    font-size: 14px;
+    padding: 15px 30px;
     display: flex;
-    background: #171717;
     justify-content: space-between;
+    background: #171717;
 }
-
 
 .left-links{
     left: 0px;
@@ -163,16 +157,15 @@ footer{
 
 .right-links{
     left: auto;
-    padding-right: 25px;
+    /* padding-right: 25px; */
 }
 
 .left-links ul,
 .right-links ul{
     display: flex;
     list-style: none;
-    gap: 25px;
-    margin: 0;
-    
+    padding: 0;
+    gap: 30px;  
 }
 
 .left-links ul,
@@ -182,8 +175,16 @@ footer{
     background: #171717;
 
 }
+
 .left-links ul li a,
 .right-links ul li a{
-    text-decoration: none;
-    
+    text-decoration: none;   
 }
+
+.left-links ul li a:hover,
+.right-links ul li a:hover{
+    text-decoration: underline;   
+}
+
+/* still needs to do: 1. make it phone responsive 2. navbar icons should be a little smaller
+and continue the video and learn it bro */

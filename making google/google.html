@@ -8,65 +8,88 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 <body>
-    
-    <nav>
-        <ul>
-            <li><a href="">Gmail</a></li>
-            <li><a href="">Images</a></li>
-            <li><a href=""><img src="labs.svg" class="9dot"></a></li>
-            <li><a href=""><img src="nine-dots-in-a-square.svg".svg"></li>
-            <li><a href=""><img src="gmail user.jpg" class="user"></a></li>
-        </ul>
-    </nav>
-                <main>
-                    <div class="glogo cent">
-                        <img class="googlelogo" src="google.svg" alt="google logo">
-                    </div>
-                    <form action="https://www.google.com/search">
-                        <div class="cent">
-                            <input class="googleSearch" type="text" name="q"> 
-                        </div>   
-                    </form>
-                    
-                    <div class="cent">                 
-                        <button class="btnA">Google Search</button>
-                        <button class="btnA">I'm Feeling Lucky</button>
-                    </div>
-        
-                    <div class="translatepage cent">
-                        <p>Google offered in: <a href="">বাংলা</a></p>
-                    </div>
-                </main>
+           <nav>
+                <ul>
+                    <li><a href="">Gmail</a></li>
+                    <li><a href="">Images</a></li>
+                    <li><a href=""><img src="labs.svg" class="9dot"></a></li>
+                    <li><a href=""><img src="nine-dots-in-a-square.svg"></li>
+                    <li><a href=""><img src="gmail user.jpg" class="user"></a></li>
+                </ul>
+            </nav>
 
-
-            <!-- <center>
-                <h3>now i have to go to varsity and will do this again tomorrow</h3>
-            </center> -->
-    <br><br><br>
-    <!-- <a href="https://youtu.be/LzMnsfqjzkA?t=1881"><button style="background-color:red; color:white;font-size: 34px;">Continue video</button></a> -->
+            <main>
+                <div class="glogo cent">
+                    <img draggable="false" 
+                    class="googlelogo" 
+                    src="google.svg" 
+                    alt="google logo"
+                    id="googlelogo">
+                </div>
+                <form action="https://www.google.com/search">
+                    <div class="cent">
+                        <input class="googleSearch" type="text" name="q"> 
+                    </div>   
+                </form>
+                
+                <div class="cent">                 
+                    <button class="btnA">Google Search</button>
+                    <a href="https://doodles.google/"><button class="btnA">I'm Feeling Lucky</button></a>
+                </div>
     
+                <div class="translatepage cent">
+                    <p>Google offered in: <a href="#" id="bangla-translate">বাংলা</a></p>
+                </div>
+            </main>  
+            
     <footer>
-        <div class="country">
+            <div class="country">
+            <a href="https://youtu.be/LzMnsfqjzkA?t=1881"><button style="background-color:red; color:white;font-size: 34px;">Continue video</button></a>
             <p>Bangladesh</p>
         </div>
         <div class="footerlinks">
             <div class="left-links">
                 <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Advertising</a></li>
-                    <li><a href="#">Business</a></li>
-                    <li><a href="#">How Search Works</a></li>
+                    <li><a href="https://about.google/">About</a></li>
+                    <li><a href="https://business.google.com/en-all/google-ads/">Advertising</a></li>
+                    <li><a href="https://business.google.com/">Business</a></li>
+                    <li><a href="https://www.google.com/search/howsearchworks/">How Search works</a></li>
                 </ul>
             </div>
             <div class="right-links">
                 <ul>
-                    <li><a href="#">Privacy</a></li>
-                    <li><a href="#">Terms</a></li>
-                    <li><a href="#">Settings</a></li>
+                    <li><a href="https://policies.google.com/privacy?hl=en-BD">Privacy</a></li>
+                    <li><a href="https://policies.google.com/terms?hl=en-BD">Terms</a></li>
+                    <li><a href="#" id="sss">Settings</a></li>
                 </ul>
             </div>
         </div>
     </footer>
+
+
+    <script>
+        const glogo = document.getElementById("googlelogo");
+        glogo.addEventListener("click", () => {
+        glogo.classList.toggle("active");
+            // if(!glogo.classList.contains("active")){
+            //     glogo.classList.add("active");
+            // }
+        });
+
+        const s = document.getElementById("sss");
+        sss.addEventListener("click", () => {
+            window.alert(
+                "Bro take a break! 🥲"
+            )
+        });
+
+        const bdtext = document.getElementById("bangla-translate");
+        bdtext.addEventListener("click", () => {
+            window.alert(
+                "বাংলা কথা -> 'এখন ও এটা  শিখিনি!'"
+            )
+        });
+    </script>
     
 </body>
 </html>
