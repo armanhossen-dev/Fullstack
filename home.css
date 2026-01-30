@@ -9,15 +9,30 @@ body{
     background-color: rgb(32, 32, 32);
 }
 
-.allpages{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    margin-top: 5px;
+h2{
+    color: white;
 }
 
-.btn button{
+.HTMLCSS{
+    background-color: brown;
+    padding: 10px;
+}
+
+/* .center{
+     display: flex;
+    justify-content: center;
+    align-content: center;
+} */
+
+.inner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+button{
     padding: 5px;
     font-size: 15px;
+    margin: 5px;
 }
