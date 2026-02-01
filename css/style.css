@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+}
+
+body{
+    background-color: yellow;
+    color: blue;
+    font-size: 35px;
+    font-weight: lighter; /*normal bold*/
+    /* text-align: right; */
+    margin-top: 45px;
+}
+    /* here  
+    if you go to any html css page internet, right click on mouse then inspect
+    you can select the part of the web and you see ther is higlight the html code part 
+    now you can change that part's css
+    go tho the styles
+    you can see 
+    element.style{} here what ever css you apply it will be automaicly applied to that website selections
+    */
+
+p, h2, li{
+    z-index: 1;
+}
+
+.green{
+    top: 50px;
+    width: 500px;
+    height: 300px;
+    background-color: green;
+
+    /* center it horizontal */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.red{
+    position: relative;
+    top: 50px;
+    left: 30%;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.card{
+    margin: 40px;
+    padding: 20px;
+    color: white;
+    background-color: black;
+}
+
+.card p{
+    color: rgb(136, 136, 136);
+    font-size: 25px;
+}
