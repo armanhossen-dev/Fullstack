@@ -22,9 +22,8 @@ here installation i can choose any but talwind cli or play cdn
 now i am using paly cdn
 go to play cdn
 then copy this part for your html code:
-
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
+inside <head> tag 
+<script src="https://cdn.tailwindcss.com"></script>
 
 extensions for vs code needed
 live server
