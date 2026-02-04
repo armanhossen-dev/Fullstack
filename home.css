@@ -18,6 +18,11 @@ h2{
     padding: 10px;
 }
 
+.tailwindcss{
+    background-color: #2664eb;
+    padding: 10px;
+}
+
 /* .center{
      display: flex;
     justify-content: center;
