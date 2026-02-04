@@ -37,7 +37,14 @@ h2{
 }
 
 button{
-    padding: 5px;
+    padding: 10px;
     font-size: 15px;
-    margin: 5px;
+    margin: 10px;
+    border: none;
+    border-radius: 12px;    
+    border: 1px solid transparent;
+}
+
+button:hover{
+    border: 1px solid #2664eb;
 }
