@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Colors in tailwindcss</title>
+    <style>
+      body {
+        padding: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 1. Colors With Different Shades -->
+    <!-- https://tailwindcss.com/docs/customizing-colors  -->
+     <h1>1. Colors with Different Shades [text-colorname-shade(50-900)]</h1>
+     <a href="https://tailwindcss.com/docs/customizing-colors" target="_blank">
+      <button class="text-violet-500">See More</button>
+     </a>
+     <p class="text-blue-50">Tailwind</p>
+     <p class="text-blue-100">Tailwind</p>
+     <p class="text-blue-200">Tailwind</p>
+     <p class="text-blue-300">Tailwind</p>
+     <p class="text-blue-400">Tailwind</p>
+     <p class="text-blue-500">Tailwind</p>
+     <p class="text-blue-600">Tailwind</p>
+     <p class="text-blue-600">Tailwind</p>
+     <p class="text-blue-700">Tailwind</p>
+     <p class="text-blue-800">Tailwind</p>
+     <p class="text-blue-900">Tailwind</p>
+     <!-- text-color-(50-900) while 1000 then it becomes black-->
+     <!-- <p class="text-blue-1000">Tailwind</p> -->
+
+     <br>
+     <hr>
+     <br>
+
+    <!-- 2. Background Colors 
+        
+    bg-inherit        background-color: inherit;
+    bg-current        background-color: currentColor;
+    bg-transparent    background-color: transparent;
+    bg-black          background-color: var(--color-black); /* #000 */
+    bg-white          background-color: var(--color-white); /* #fff */
+    bg-red-50         background-color: var(--color-red-50); /* oklch(97.1% 0.013 17.38) */
+    bg-red-100        background-color: var(--color-red-100); /* oklch(93.6% 0.032 17.717) */
+    bg-[<value>]      background-color: <value>; 
+    
+    -->
+    <!-- https://tailwindcss.com/docs/background-color -->
+    <h1>2. Background Colors [bg-red-600]</h1>
+    <a href="https://tailwindcss.com/docs/background-color" target="_blank">
+      <button class="text-violet-500">See More</button>
+    </a>
+    <p class="bg-pink-500 text-white">Tailwind</p>
+    <p class="bg-red-500 text-white">Tailwind</p>
+    <p class="bg-blue-400 text-white">Tailwind</p>
+
+    <p class="bg-red-600 text-white">Lorem ipsum, dolor sit amet consectetur adipisicing       elit. Assumenda deserunt eius, fuga maiores totam       sint amet fugiat sit alias itaque vitae rerum       ullam nam. Error, ipsa eius. Explicabo, quasi odio. </p>
+    <p class="bg-green-600 text-white">Lorem ipsum, dolor sit amet consectetur adipisicing       elit. Assumenda deserunt eius, fuga maiores totam       sint amet fugiat sit alias itaque vitae rerum       ullam nam. Error, ipsa eius. Explicabo, quasi odio. </p>
+    <p class="bg-blue-600 text-white">Lorem ipsum, dolor sit amet consectetur adipisicing       elit. Assumenda deserunt eius, fuga maiores totam       sint amet fugiat sit alias itaque vitae rerum       ullam nam. Error, ipsa eius. Explicabo, quasi odio. </p>
+
+     <br>
+     <hr>
+     <br>
+
+     <!-- Text Decoration
+      https://tailwindcss.com/docs/text-decoration 
+
+      using class:
+      text-decoration-line
+
+      Class                 Styles
+      underline             text-decoration-line: underline;
+      overline              text-decoration-line: overline;
+      line-through          text-decoration-line: line-through; 
+      no-underline          text-decoration-line: none;
+      hover:underline
+      
+      -->
+    <h1>3. Text Decoration </h1>
+    <a href="https://tailwindcss.com/docs/text-decoration" target="_blank">
+      <button class="text-violet-500">See More</button>
+    </a>
+    <p class="line-through">Tailwind wow</p>
+    <p class="underline">Tailwind wow</p>
+    <p class="underline decoration-blue-500">Tailwind wow</p>
+    <p class="overline">Tailwind wow</p>
+    <!-- p.text-purple-600.underline.decoration-purple-300 -->
+    <p class="text-purple-600 underline decoration-purple-300">Tailwind wow</p>
+    <span class="text-blue-400 hover:underline">Hover me</span>
+
+    <br>
+    <hr>
+    <br>
+    <!-- Accent Color -->
+    <!-- https://tailwindcss.com/docs/accent-color -->
+    <h1>4. Accent Color</h1>
+    <a href="https://tailwindcss.com/docs/accent-color" target="_blank">
+    <button class="text-violet-800">See More</button>
+    </a>
+    <br>
+    <input type="checkbox"> <!-- browser default-->
+    <input type="checkbox" class="accent-indigo-500" checked>
+    <input type="checkbox" class="accent-yellow-500" checked>
+    <input type="checkbox" class="accent-red-500" checked>
+
+  </body>
+</html>
