@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color: rgb(32, 32, 32);
+    background-color: rgb(0, 0, 0);
 }
 
 h2{
@@ -14,20 +14,28 @@ h2{
 }
 
 .HTMLCSS{
-    background-color: brown;
+    background-image: linear-gradient(120deg,
+     #e34c26, 
+     #f06529,
+     #ebebeb,
+     #264de4,
+     #2965f1 
+     );
     padding: 10px;
 }
 
 .tailwindcss{
-    background-color: #2664eb;
+    background-image: linear-gradient(45deg,
+    #1840b7,
+    #00bbff
+    );
     padding: 10px;
 }
 
-/* .center{
-     display: flex;
-    justify-content: center;
-    align-content: center;
-} */
+.exp{
+    background-color: #f10e0ecf;
+    padding: 10px;
+}
 
 .inner{
     display: flex;
