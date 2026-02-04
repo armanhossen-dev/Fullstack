@@ -7,30 +7,166 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Typography</title>
   </head>
-  <body class="p-20">
-    <!-- Font Size -->
-    <!-- https://tailwindcss.com/docs/font-size -->
+  <body class="p-10">
 
-    <!-- Font Family -->
-    <!-- https://tailwindcss.com/docs/font-family -->
+        
+    <a href="https://ahrn-fullstack-learning-2026.vercel.app/">
+      <button class="bg-red-700 text-white mb-10">Back To Home</button>
+    </a>
 
-    <!-- Font Weight -->
-    <!-- https://tailwindcss.com/docs/font-weight -->
+    <h1>1. Font Size</h1>
+    <a href="https://tailwindcss.com/docs/font-size" target="_blank">
+      <button class="bg-black text-white p-2">See More</button>
+    </a>
+      <div class="container bg-green-300 p-5 mb-10">
+        <p class="p-5 bg-green-200 my-5">text-xs, sm, base, lg, xl, 2xl, 3xl, 4xl, 5xl, 6xl, 7xl, 8xl, 9xl</p>
+        <p class="text-xs">text-xs = extra small</p>
+        <p class="text-sm">text-sm = small</p>
+        <p class="text-base">text-base = base / default font size</p>
+        <p class="text-lg">text-lg = large</p>
+        <p class="text-xl">text-xl = extra large</p>
+        <p class="text-2xl">text-2xl = 2times extra large</p>
+        <p class="text-3xl">text-3xl = 3times extra large</p>
+        <p class="text-4xl">text-4xl = 4times extra large</p>
+        <!-- 
+        <p class="text-5xl">text-5xl = 5times extra large</p>
+        <p class="text-6xl">text-6xl = 6times extra large</p>
+        <p class="text-7xl">text-7xl = 7times extra large</p>
+        <p class="text-8xl">text-8xl = 8times extra large</p> 
+        <p class="text-9xl">text-9xl = 9times extra large</p> 
+        -->
+        <p>There is only xl - to - 9xl p-2 , no more than that size</p>
+        <p class="text-[50px]"> text-[50px], Custom Font size to text</p>
+      </div>
 
-    <!-- Letter Spacing -->
-    <!-- https://tailwindcss.com/docs/letter-spacing -->
 
-    <!-- Text Alignment -->
-    <!-- https://tailwindcss.com/docs/text-align -->
+    <h1>2. Font Family</h1>
+    <!-- 
+    Class                           Styles
+    font-sans                       font-family: var(--font-sans); /* ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji' */
+    font-serif                      font-family: var(--font-serif); /* ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif */
+    font-mono                             font-family: var(--font-mono); /* ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace */
+    font-(family-name:<custom-property>)  font-family: var(<custom-property>);
+    font-[<value>]                        font-family: <value>;
+    -->
+    <a href="https://tailwindcss.com/docs/font-family" target="_blank">
+      <button class="bg-black text-white p-2">See More</button>
+    </a>
+      <div class="container p-5 bg-indigo-500 mb-5">
+          <p class="my-5 p-5 bg-indigo-200 text-violet-500">font-sans, serif, mono</p>          
+          <p class="font-sans text-violet-200">Tailwind is Awesome! -  font-sans</p>
+          <p class="font-serif text-violet-400">Tailwind is Awesome! -  font-serif</p>
+          <p class="font-mono text-violet-900">Tailwind is Awesome! -  font-mono</p>
+      </div>
 
-    <!-- Text Decoration -->
-    <!-- https://tailwindcss.com/docs/text-decoration-thickness -->
 
-    <!-- Decoration Style -->
+    <h1>3. Font Weight</h1>
+    <!-- 
+    font-thin                   font-weight: 100;
+    font-extralight             font-weight: 200;
+    font-light                  font-weight: 300;
+    font-normal                 font-weight: 400;
+    font-medium                 font-weight: 500;
+    font-semibold               font-weight: 600;
+    font-bold                   font-weight: 700;
+    font-extrabold              font-weight: 800;
+    font-black                  font-weight: 900;
+    font-(<custom-property>)    font-weight: var(<custom-property>);
+    font-[<value>]              font-weight: <value>;
+    -->
+    <a href="https://tailwindcss.com/docs/font-weight" target="_blank">
+      <button class="bg-black text-white p-2">See More</button>
+    </a>
+    <div class="bg-orange-500 mb-10 p-5">
+      <p class="my-5 bg-orange-400 p-5">
+        font-thin (100), light(300), extralight(200) normal(400), medium(500), <br> semibold(600), bold(700), extrabold(800), black(900)
+      </p>
 
-    <!-- Decoration Offset -->
+    <p class="font-thin">font-thin, font-weight: 100;</p>
+    <p class="font-extralight">font-extralight, font-weight: 200;</p>
+    <p class="font-light">font-light, font-weight: 300;</p>
+    <p class="font-normal">font-normal, font-weight: 400;</p>
+    <p class="font-medium">font-medium, font-weight: 500;</p>
+    <p class="font-semibold">font-semibold,font-weight: 600;</p>
+    <p class="font-bold">font-bold, font-weight: 700;</p>
+    <p class="font-extrabold">font-extrabold, font-weight: 800;</p>
+    <p class="font-black">font-black, font-weight: 900;</p>
+    
+    <hr class="my-5">
+    
+    <!-- p.font-(<custom-property>) font-weight: var(<custom-property>); -->
+    <p class="text-white my-3">font-[value]   font-weight:'value';</p>
+    <p class="font-[200]">This font weight is 200</p>
+    <p class="font-[800]">This font weight is 800</p>
+    </div>
 
-    <!-- Text Transform -->
-    <!-- https://tailwindcss.com/docs/text-transform -->
+
+    <h1>4. Letter Spacing</h1>
+    <a href="https://tailwindcss.com/docs/letter-spacing" target="_blank">
+      <button class="bg-black text-white p-2">See More</button>
+    </a>
+    <div class="container bg-gray-300 p-10 mb-10">
+        <p class="mb-5 p-5 bg-gray-200 text-black">
+          tracking-tighter, tight, normal, wide, wider, widest, [value]
+        </p>
+        <p class="tracking-tighter">Here Letters are tighter</p>
+        <p class="tracking-tight">Here Letters are tight</p>
+        <p class="tracking-normal">Here Letters are normal</p>
+        <p class="tracking-wide">Here Letters are wide</p>
+        <p class="tracking-wider">Here Letters are wider</p>
+        <p class="tracking-widest">Here Letters are widest</p>
+        <p class="tracking-[10px]">Here Letters are 10px wide</p>
+    </div>
+
+
+    <h1>5. Text Alignment</h1>
+    <a href="https://tailwindcss.com/docs/text-align" target="_blank">
+      <button class="bg-black text-white p-2">See More</button>
+    </a>
+    <div class="container bg-green-500 p-5 mb-10">
+      <p class="p-5 my-5 bg-green-400">text-left, center, right, justify, start, end</p>
+      <p class="text-left">This text is left</p>
+      <p class="text-center">This text is center</p>
+      <p class="text-right">This text is right</p>
+      <p class="text-justify">This text is justify</p>
+      <p class="text-start">This text is start</p>
+      <p class="text-end">This text is end</p>
+    </div>
+
+
+    <h1>6. Text Decoration</h1>
+    <a href="https://tailwindcss.com/docs/text-decoration-thickness" target="_blank">
+      <button class="bg-black text-white p-2">See More</button>
+    </a>
+    <div class="container bg-blue-400 mb-10 p-5">
+      <p class="p-5 my-5 bg-blue-200">decoration-num, from-front,auto,(length: custom_property), [value]</p>
+      
+      <p class="underline decoration-4">Text is underlined with decoration-4, means underline is 4px thicker
+        <br>unline of a text can be only 1-4px using decoration-(1-4)px
+      </p>
+
+      <p class="line-through decoration-2">Line through decoration can be only 1/2</p>
+      <p class="overline decoration-2">overline with decoration 2px, it can olny be 1/2</p>
+    </div>
+
+    <!-- https://youtu.be/WvBnTJK7Khk?list=PLSDeUiTMfxW6VChKWb26Z_mPR4f6fAmMV&t=3264 -->
+    <h1>7. Decoration Style</h1>
+    
+
+
+
+    <h1>8. Decoration Offset</h1>
+
+
+
+
+
+    <h1>9. Text Transform</h1>
+    <a href="https://tailwindcss.com/docs/text-transform" target="_blank">
+      <button class="bg-black text-white p-2">See More</button>
+    </a>
+
+
+
   </body>
 </html>
