@@ -34,10 +34,14 @@
         <p class="text-8xl">text-8xl = 8times extra large</p> 
         <p class="text-9xl">text-9xl = 9times extra large</p> 
         -->
-        <p>There is only xl - to - 9xl p-2 , no more than that size</p>
+        <p>There is only xl - to - 9xl, no more than that size</p>
         <p class="text-[50px]"> text-[50px], Custom Font size to text</p>
       </div>
 
+    
+      <hr class="my-5">
+
+    
 
     <h1>2. Font Family</h1>
     <!-- 
@@ -59,6 +63,9 @@
       </div>
 
 
+    <hr class="my-5">
+    
+
     <h1>3. Font Weight</h1>
     <!-- 
     font-thin                   font-weight: 100;
@@ -77,9 +84,10 @@
       <button class="bg-black text-white p-2">See More</button>
     </a>
     <div class="bg-orange-500 mb-10 p-5">
-      <p class="my-5 bg-orange-400 p-5">
-        font-thin (100), light(300), extralight(200) normal(400), medium(500), <br> semibold(600), bold(700), extrabold(800), black(900)
-      </p>
+
+    <p class="my-5 bg-orange-400 p-5">
+      font-thin (100), light(300), extralight(200) normal(400), medium(500), <br> semibold(600), bold(700), extrabold(800), black(900)
+    </p>
 
     <p class="font-thin">font-thin, font-weight: 100;</p>
     <p class="font-extralight">font-extralight, font-weight: 200;</p>
@@ -91,13 +99,19 @@
     <p class="font-extrabold">font-extrabold, font-weight: 800;</p>
     <p class="font-black">font-black, font-weight: 900;</p>
     
+
     <hr class="my-5">
+
     
     <!-- p.font-(<custom-property>) font-weight: var(<custom-property>); -->
     <p class="text-white my-3">font-[value]   font-weight:'value';</p>
     <p class="font-[200]">This font weight is 200</p>
     <p class="font-[800]">This font weight is 800</p>
     </div>
+
+
+    <hr class="my-5">    
+
 
     <h1>4. Letter Spacing</h1>
     <a href="https://tailwindcss.com/docs/letter-spacing" target="_blank">
@@ -117,6 +131,10 @@
     </div>
 
 
+    <hr class="my-5">
+    
+
+
     <h1>5. Text Alignment</h1>
     <a href="https://tailwindcss.com/docs/text-align" target="_blank">
       <button class="bg-black text-white p-2">See More</button>
@@ -132,21 +150,26 @@
     </div>
 
 
+    <hr class="my-5">
+    
+
     <h1>6. Text Decoration</h1>
     <a href="https://tailwindcss.com/docs/text-decoration-thickness" target="_blank">
       <button class="bg-black text-white p-2">See More</button>
     </a>
     <div class="container bg-blue-400 mb-10 p-5">
       <p class="p-5 my-5 bg-blue-200">decoration-num, from-front,auto,(length: custom_property), [value]</p>
-      
       <p class="underline decoration-4">Text is underlined with decoration-4, means underline is 4px thicker
         <br>unline of a text can be only 1-4px using decoration-(1-4)px
       </p>
-
       <p class="line-through decoration-2">Line through decoration can be only 1/2</p>
       <p class="overline decoration-2">overline with decoration 2px, it can olny be 1/2</p>
+      <p class="no-underline">Tailwind is awesome | no-underline</p>
     </div>
 
+
+    <hr class="my-5">
+    
 
     <!-- https://youtu.be/WvBnTJK7Khk?list=PLSDeUiTMfxW6VChKWb26Z_mPR4f6fAmMV&t=3264 -->
     <h1>7. Decoration Style</h1>
@@ -155,11 +178,11 @@
     </a>
     <div class="container bg-cyan-500 p-10 mb-10">
       <p class="p-3 bg-cyan-200 my-5">underline decoration-solid,double, dotted, dashed, wavy</p>
-      <p class="underline decoration-solid text-2xl">Tailwind decoration-solid </p>
-      <p class="underline decoration-double text-2xl">Tailwind decoration-double</p>
-      <p class="underline decoration-dotted text-2xl">Tailwind decoration-dotted</p>
-      <p class="underline decoration-dashed text-2xl">Tailwind decoration-dashed</p>
-      <p class="underline decoration-wavy text-2xl">Tailwind decoration-wavy</p>
+      <p class="underline decoration-solid text-xl">Tailwind decoration-solid </p>
+      <p class="underline decoration-double text-xl">Tailwind decoration-double</p>
+      <p class="underline decoration-dotted text-xl">Tailwind decoration-dotted</p>
+      <p class="underline decoration-dashed text-xl">Tailwind decoration-dashed</p>
+      <p class="underline decoration-wavy text-xl">Tailwind decoration-wavy</p>
       <!-- decoration-[<value>]    text-decoration-thickness: <value>; -->
       <p class="underline decoration-[10px] mb-5">Underline 10px thickness of underline decoration-[10px]</p>
       
@@ -171,6 +194,9 @@
        <p class="underline decoration-2">decoration-2</p>
        <p class="underline decoration-4">decoration-4</p>
      </div>
+
+
+     <hr class="my-5">
 
 
     <h1>8. Decoration Offset [text-underline-offset]</h1>
@@ -193,13 +219,21 @@
 
 
 
+    <hr class="my-5">
+    
+
+
     <h1>9. Text Transform</h1>
     <a href="https://tailwindcss.com/docs/text-transform" target="_blank">
       <button class="bg-black text-white p-2">See More</button>
     </a>
-    
-
-
+    <div class="container bg-teal-500 p-10 mb-10">
+      <p class="p-3 bg-teal-300 my-5">inside class=" " -> uppercase, lowercase, capitalize, normal-case</p>
+      <p class="normal-case">The quick brown fox jumps over the lazy dog</p>
+      <p class="uppercase">The quick brown fox jumps over the lazy dog</p>
+      <p class="lowercase">The quick Brown fox jumps over the lazy dog</p>
+      <p class="capitalize">The quick brown fox jumps over the lazy dog</p>
+    </div>
 
   </body>
 </html>
