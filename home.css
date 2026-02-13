@@ -56,3 +56,21 @@ button{
 button:hover{
     border: 1px solid #2664eb;
 }
+
+.motiv{
+    position: fixed;
+    bottom: 0px;
+    display: flex;
+    /* text-align: center; */
+    justify-content: center;
+    align-items: center;
+    font-family: "Rubik Glitch", system-ui;
+    font-family: "Red Rose", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 2em;
+    height: 80px;
+    background: #801689;
+    color: white;
+    width: 100%;
+}
