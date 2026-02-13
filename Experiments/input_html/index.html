@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Types</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-fuchsia-600">
+
+    <div class="flex flex-col w-[400px] gap-3 bg-rose-500 p-5 rounded-xl mx-auto my-auto mt-40">
+        
+        <div class="flex flex-row gap-5">
+            <label for="text">Name :</label>
+            <input type="text" class="w-[280px] rounded-md" >
+        </div>
+        
+        <div class="flex flex-row gap-5">
+            <label for="password">Password :</label>
+            <input type="password" class="w-[253px] rounded-md">
+        </div>
+        <div class="flex flex-row gap-5 bg-rose-400 p-1 rounded-[4px]">
+            <!-- for="" inside label, works for the id in the input  -->
+            <!-- to select only one radio then i have to use same name in them but different values -->
+            <label for="radio">Radio :</label>
+            <label>1</label><input type="radio" name="same" value="1" class="cursor-pointer">
+            <label>2</label><input type="radio" name="same" value="2" class="cursor-pointer">
+            <label>3</label><input type="radio" name="same" value="3" class="cursor-pointer">
+        </div>
+
+        <div class="flex flex-row gap-5">
+        <input type="number">
+        </div>
+        <div class="flex flex-row gap-5">
+        <input type="image">
+        </div>
+        <div class="flex flex-row gap-5">
+        <input type="checkbox">
+        </div>
+        <div class="flex flex-row gap-5">
+        <input type="button">
+        </div>
+        <div class="flex flex-row gap-5">
+        <input type="email">
+        </div>
+        <di class="flex flex-row gap-5">
+        <input type="file">    
+        </div>
+    </div>
+    
+</body>
+</html>
