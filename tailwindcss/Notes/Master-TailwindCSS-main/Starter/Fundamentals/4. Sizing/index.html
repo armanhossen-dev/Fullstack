@@ -9,12 +9,82 @@
   </head>
   <body class="p-20">
     
-    <h2>Width</h2>
+    <h2>Border-radius [rounded-]</h2>      
+    <a href="https://tailwindcss.com/docs/border-radius" target="_blank">
+      <button class="bg-black text-white p-2">See More</button>
+    </a>
+    <div class="bg-gray-300 p-5 rounded-[25px] m-2 ">
+      <p>note -> all = xs, sm, md, lg, xl-4xl,none, full, [value]</p>
+      <p>using rounded-xs, sm, md, lg, xl-4xl,none, full, [value]</p>
+      <ol class="list-decimal bg-gray-200 p-10 rounded-2xl">
+        <li class="bg-orange-300 m-1 rounded-s-2xl p-4 ">rounded-s- rounds the start side, start depends on the text direction, english -> left side, arabic rightside</li>
+        <li class="bg-orange-400 m-1 rounded-e-2xl p-4">rounded-e- rounds the end side as text direction</li>
+        <li class="bg-orange-500 m-1 rounded-t-2xl p-4">rounded-t- rounds the top corners</li>
+        <li class="bg-orange-600 m-1 rounded-r-2xl p-4">rounded-r- rounds the right side corners</li>
+        <li class="bg-orange-700 m-1 rounded-l-2xl p-4">rounded-l- rounds the left side corners</li>
+        <li class="bg-orange-800 m-1 rounded-b-2xl p-4">rounded-b- rounds the bottom side corners</li>
+        <li class="bg-rose-100 m-1 rounded-ss-2xl p-4">rounded-ss- rounds the bottom side corners</li>
+        <li class="bg-rose-500 m-1 rounded-se-2xl p-4">rounded-se- rounds the bottom side corners</li>
+        <li class="bg-rose-300 m-1 rounded-ee-2xl p-4">rounded-ee- rounds the bottom side corners</li>
+        <li class="bg-rose-400 m-1 rounded-es-2xl p-4">rounded-es- rounds the bottom side corners</li>
+        <li class="bg-rose-500 m-1 rounded-tl-2xl p-4">rounded-tl- rounds the bottom side corners</li>
+        <li class="bg-rose-600 m-1 rounded-tr-2xl p-4">rounded-tr- rounds the bottom side corners</li>
+        <li class="bg-rose-700 m-1 rounded-bl-2xl p-4">rounded-bl- rounds the bottom side corners</li>
+        <li class="bg-rose-800 m-1 rounded-br-2xl p-4">rounded-br- rounds the bottom side corners</li>
+        <li class="bg-rose-900 m-1 rounded-br-full p-4">rounded-br-full rounds the bottom side corners</li>
+      </ol>
+    </div>
+
+
+    <h2>Width [w]</h2>
     <a href="https://tailwindcss.com/docs/width" target="_blank">
       <button class="p-2 bg-black text-white">See More</button>
     </a>
     <div class="container bg-red-500 p-10 mb-10">
-      <p class="bg-red-300 p-3 my-5"></p>
+      <p class="text-white bg-red-400 p-3 my-5">w-xs, sm, md, lg, xl, 2xl, number, fraction, 1-7xl, auto, px, full, screen, 100dvm, 100dvh, -min, -max, -[value]</p>
+      <p class="text-white bg-red-400 p-3 my-5">size-auto, number, fraction, px, full, dvm, dvh, min,max, (same as w)</p>
+      
+      <p class="mt-10 text-white">1. Basic Example of w-number in div tag</p>
+      <div class="w-96 bg-rose-300  mb-2">w-96 using in div</div>
+      <div class="w-80 bg-rose-300  mb-2">w-80 using in div</div>
+      <div class="w-64 bg-rose-300  mb-2">w-64 using in div</div>
+      <div class="w-48 bg-rose-300  mb-2">w-48 using in div</div>
+      <div class="w-40 bg-rose-300  mb-2">w-40 using in div</div>
+      <div class="w-32 bg-rose-300  mb-2">w-32 using in div</div>
+      <div class="w-24 bg-rose-300  mb-2">w-24 using in div</div>
+    
+      <p class="mt-10 text-white">2. using a percentage in w-full, w-1/3 like in div</p>
+      <div class="flex">
+        <div class="w-1/2 bg-rose-800 text-white my-1 p-1 ">w-1/2</div>
+        <div class="w-1/2 bg-rose-800 text-white my-1 p-1 ">w-1/2</div>
+      </div>
+      
+      <div class="flex">
+        <div class="w-1/5 bg-rose-800 text-white my-1 p-1 ">w-1/5</div>
+        <div class="w-4/5 bg-rose-800 text-white my-1 p-1 ">w-4/5</div>
+      </div>
+
+      <div class="flex">
+        <div class="w-4/6 bg-rose-800 text-white my-1 p-1 ">w-4/6</div>
+        <div class="w-2/6 bg-rose-800 text-white my-1 p-1 ">w-2/6</div>
+      </div>
+
+      <div class="flex">
+         <div class="w-full bg-rose-800 text-white my-1 p-1 ">w-full</div>
+      </div>
+
+
+      <p class="mt-10 text-white">3. using div and w-xl,lg, md,sm,xs, 2xs, 3xs, fixed width based on the container scale</p>
+      <div class="bg-rose-300 w-xl m-1">w-xl</div>
+      <div class="bg-rose-300 w-lg m-1">w-lg</div>
+      <div class="bg-rose-300 w-md m-1">w-md</div>
+      <div class="bg-rose-300 w-sm m-1">w-sm</div>
+      <div class="bg-rose-300 w-xs m-1">w-xs</div>
+      <div class="bg-rose-300 w-2xs m-1">w-2xs</div>
+      <div class="bg-rose-300 w-3xs m-1">w-3xs</div>
+
+
+
     </div>
 
     <hr class="my-5">
