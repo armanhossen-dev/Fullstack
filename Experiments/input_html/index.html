@@ -6,20 +6,33 @@
     <title>Input Types</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-fuchsia-600">
+<body class="bg-black
+             h-screen
+             flex
+             items-center
+             justify-center
+             transition-all
+             duration-400
+            ">
 
-    <div class="flex flex-col w-[400px] gap-3 bg-rose-500 p-5 rounded-xl mx-auto my-auto mt-40">
+            <a href="https://ahrn-fullstack-learning-2026.vercel.app/" target="_blank">
+                <button class="bg-rose-500 rotate-90 p-2 text-white">HOME PAGE</button>
+            </a>
+
+    <div class="flex flex-col w-[400px] gap-3 bg-rose-500 p-5 rounded-xl mx-auto my-auto mt-20">
         
         <div class="flex flex-row gap-5">
-            <label for="text">Name :</label>
-            <input type="text" class="w-[280px] rounded-md" >
+            <label for="text" class="w-1/4">Name :</label>
+            <input type="text" class="w-3/4 rounded-md" >
         </div>
         
         <div class="flex flex-row gap-5">
-            <label for="password">Password :</label>
-            <input type="password" class="w-[253px] rounded-md">
+            <!-- https://youtu.be/rRzeygfoHI4 -->
+            <label for="password" class="w-1/4">Password :</label>
+            <input type="password" class="w-3/4 rounded-md">
         </div>
-        <div class="flex flex-row gap-5 bg-rose-400 p-1 rounded-[4px]">
+        
+        <div class="flex flex-row gap-3 bg-rose-400 p-1 rounded-[4px]">
             <!-- for="" inside label, works for the id in the input  -->
             <!-- to select only one radio then i have to use same name in them but different values -->
             <label for="radio">Radio :</label>
@@ -29,24 +42,46 @@
         </div>
 
         <div class="flex flex-row gap-5">
-        <input type="number">
+            <label for="number" class="w-1/4">Phone :</label>
+            <input type="number" class="w-3/4 rounded-[4px]">
         </div>
+
         <div class="flex flex-row gap-5">
-        <input type="image">
+            <label for="image" class="w-1/4 h-4/4">Image: </label>
+            <input type="image" class="w-3/4 h-1/4 rounded-md" src="img/why.jpg">
         </div>
+
         <div class="flex flex-row gap-5">
-        <input type="checkbox">
+            <label class="w-1/4">Check Box :</label>
+            <input type="checkbox" checked class="accent-rose-300">
         </div>
+        
         <div class="flex flex-row gap-5">
-        <input type="button">
+            <label for="email" class="w-1/4">Email :</label>
+            <input type="email" class="w-3/4 rounded-md">
         </div>
-        <div class="flex flex-row gap-5">
-        <input type="email">
-        </div>
+
         <di class="flex flex-row gap-5">
-        <input type="file">    
+            <label for="bg" class="w-1/4">Change BG</label>
+            <input type="file" id="bg" class="w-3/4">
         </div>
     </div>
     
+    <script>
+        const bg = document.getElementById('bg');
+        bg.addEventListener('change', function() {
+            const file = this.files[0];
+            if(file){
+                const reader = new FileReader();
+                reader.onload = function(e){
+                    //it apply new uploaded background dynamically
+                    document.body.style.backgroundImage = `url('${e.target.result}')`;
+                    document.body.style.backgroundSize = 'cover';
+                    document.body.style.backgroundPosition = 'center';
+                }
+                reader.readAsDataURL(file);
+            }
+        });
+    </script>
 </body>
 </html>
