@@ -19,7 +19,7 @@
                 <button class="bg-rose-500 rotate-90 p-2 text-white">HOME PAGE</button>
             </a>
 
-    <div class="flex flex-col w-[400px] gap-3 bg-rose-500 p-5 rounded-xl mx-auto my-auto mt-20">
+    <div class="flex flex-col w-[400px] gap-3 bg-rose-500 p-5 rounded-xl mx-auto my-auto mt-30">
         
         <div class="flex flex-row gap-5">
             <label for="text" class="w-1/4">Name :</label>
@@ -63,7 +63,10 @@
 
         <di class="flex flex-row gap-5">
             <label for="bg" class="w-1/4">Change BG</label>
-            <input type="file" id="bg" class="w-3/4">
+            <input type="file" id="bg" accept="image/*" class="w-3/4">
+            <!-- accept="image/*" -> it only accepts image files  -->
+            <!-- type="image" -> image submit buttonn  -->
+            <!-- type="file" -> uploads files  -->
         </div>
     </div>
     
