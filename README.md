@@ -13,7 +13,7 @@ ipconfig getifaddr en1
 
 ## 💻 Get Window's Local IP Address:
 
-Open ***Command Prompt /' CMD*** and run:
+Open ***Command Prompt / CMD*** and run:
 ```bash
 ipconfig
 ```
