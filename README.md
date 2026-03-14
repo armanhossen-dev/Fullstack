@@ -1,7 +1,7 @@
 # Fullstack
 
 ## 💻 Get Mac's Local IP Address:
-Open **terminal.app** and run:
+Open *terminal.app* and run:
 
 ```bash
 ipconfig getifaddr en0
@@ -13,7 +13,7 @@ ipconfig getifaddr en1
 
 ## 💻 Get Window's Local IP Address:
 
-Open **Command Prompt/' CMD** and run:
+Open *Command Prompt /' CMD* and run:
 ```bash
 ipconfig
 ```
