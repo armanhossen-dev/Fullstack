@@ -1,5 +1,5 @@
 # Fullstack
----
+
 ## 💻 Get Mac's Local IP Address:
 Open ** terminal.app ** and run:
 
@@ -10,7 +10,6 @@ ipconfig getifaddr en0
 ```bash
 ipconfig getifaddr en1
 ```
----
 
 ## 💻 Get Windows Local IP Address:
 
