@@ -1,14 +1,12 @@
 # Fullstack
 
-<hr style="border: 2px solid red;">
-
 ## 💻 Get Mac's Local IP Address:
 Open ** terminal.app ** and run:
 
 ```bash
 ipconfig getifaddr en0
 ```
-## OR try this bro
+## OR try this Bro!
 ```bash
 ipconfig getifaddr en1
 ```
@@ -19,4 +17,3 @@ Open **Command Prompt /' CMD ** and run:
 ```bash
 ipconfig
 ```
----
