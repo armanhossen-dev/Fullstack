@@ -3,6 +3,10 @@
 
 Get your Mac's local IP address:
 
-```bash
+ ```bash
 ipconfig getifaddr en0
+
+#or
+```bash
 ipconfig getifaddr en1
+```
