@@ -144,6 +144,25 @@
 
 
     <h2>Percentages</h2>
+    <a href="https://tailwindcss.com/docs/width">
+      <button class="bg-black text-white p-2">See More</button>
+    </a>
+    <div class="container bg-sky-800 p-10 mb-10">
+        <div class="flex gap-3">
+          <p class="w-2/3 text-center bg-sky-300">w-2/3</p>
+          <p class="w-1/3 text-center bg-sky-400">w-1/3</p>
+        </div>
+        <p class="bg-red-500 text-white p-2 my-2 text-xl">
+            Div elements are block-level by default, so they take the full width of their parent container. 
+            Here, the width is controlled using Tailwind's w-x/y percentage utilities.
+        </p>  
+        <div class="bg-sky-400 p-1 rounded-md my-2 w-1/5">w-1/5</div>
+        <div class="bg-sky-500 p-1 rounded-md my-2 w-2/5">w-2/5</div>
+        <div class="bg-sky-600 p-1 rounded-md my-2 w-5/5">w-5/5 or full</div>
+        <div class="bg-sky-600 p-1 rounded-md my-2 w-1/1">w-1/1 not w-1</div>
+        <div class="bg-sky-600 p-1 rounded-md my-2 w-1">This is w-1</div>
+    </div>
+    
 
     <h2>Max Width</h2>
     <a href="https://tailwindcss.com/docs/max-width" target="_blank">
