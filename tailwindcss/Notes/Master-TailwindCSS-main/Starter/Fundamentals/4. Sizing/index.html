@@ -7,7 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Sizing</title>
   </head>
-  <body class="p-20">
+  <body>
 
     <a href="https://ahrn-fullstack-learning-2026.vercel.app/">
       <button class="
@@ -135,6 +135,7 @@
 
     <hr class="my-5">
 
+    
     <h2>Sizing! [size-]</h2>
     <a href="https://tailwindcss.com/docs/width" target="_blank">
       <button class="p-2 bg-black text-white">See after scrolling that page!</button>
@@ -162,38 +163,59 @@
         <div class="bg-sky-600 p-1 rounded-md my-2 w-1/1">w-1/1 not w-1</div>
         <div class="bg-sky-600 p-1 rounded-md my-2 w-1">This is w-1</div>
     </div>
-    
+
 
     <h2>Max Width</h2>
     <a href="https://tailwindcss.com/docs/max-width" target="_blank">
       <button class="p-2 bg-black text-white">See More</button>
     </a>
     <div class="container bg-orange-500 p-10 mb-10">
-      <p class="bg-orange-300 p-3 my-5"></p>
+      <p class="bg-orange-300 p-3 my-5">
+        max-w-[number], fraction, 3xs-xs, sm, md, lg, xl-7xl, none, value_in_px, full, dvw, lvw, lvh, svw, svh, screen, -min, fit
+      </p>
+      <p class="bg-white/20 p-3 my-3">using <span class="font-bold">container</span> as class will make that tag width: 100% </p>
+      <div class="bg-orange-200 mb-5 p-2 max-w-full">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ea molestias 
+        quae provident magnam pariatur eligendi, illum omnis qui ratione soluta. 
+        te debitis perferendis libero explicabo natus, laboriosam deleniti. 
+         Quo, iusto. <span class="bg-yellow-300">this has max-w-full</span>
+      </div>
+      <!-- lorem10 then enter will give me 10 random words, lorem100 gives 100 words random  -->
+      <div class="bg-orange-100 p-2 mb-2 max-w-md">max-w-md</div>
+      <div class="bg-orange-200 p-2 mb-2 max-w-lg">max-w-lg</div>
+      <div class="bg-orange-300 p-2 mb-2 max-w-xl">max-w-xl</div>
+      <div class="bg-orange-400 p-2 mb-2 max-w-2xl">max-w-2xl</div>
     </div>
 
-    <hr class="my-5">
+    <hr class="my-3">
 
-    <h2>Width of the viewport</h2>
-    <div class="container bg-rose-500 p-10 mb-10">
-      <p class="bg-rose-300 p-3 my-5"></p>
-    </div>
-
-    <hr class="my-5">
+    <h2>Width of the viewport </h2>
+    <p class="bg-rose-300 w-screen">(vw) width 100%, by w-screen</p>
+    <p class="w-full p-3 bg-sky-300">w-full</p>
+    
+    <hr class="my-3">
 
     <h2>100% of container</h2>
-    <div class="container bg-zinc-500 p-10 mb-10">
-      <p class="bg-zinc-300 p-3 my-5"></p>
+    <div class="container bg-zinc-500 p-10 mb-10 text-zinc-200">
+      using container inside a div class, it takes 100% of any container
     </div>
 
-    <hr class="my-5">
+    <hr class="my-3">
 
     <h2>Arbitrary Width</h2>
     <div class="container bg-indigo-500 p-10 mb-10">
-      <p class="bg-indigo-300 p-3 my-5"></p>
+      <p class="bg-indigo-300 p-3 my-5 w-[300px]">w-[300px]</p>
     </div>
 
-    <hr class="my-5">
+    <hr class="my-10 h-2 bg-black">
+    <!-- increasing border thickness
+      also using h-1,2,3 thne give bg-color
+      h-[3px] bg-gray-200
+      border-t → normal
+      border-t-2 → thicker
+      border-t-4 → thick
+      border-t-8 → very thick 
+    -->
 
     <h2>Height (Most of the same options as widths)</h2>
     <a href="https://tailwindcss.com/docs/height" target="_blank">
