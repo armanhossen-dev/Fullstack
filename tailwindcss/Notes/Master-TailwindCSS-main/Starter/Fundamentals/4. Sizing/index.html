@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Sizing</title>
   </head>
@@ -40,7 +40,7 @@
       <button class="bg-black text-white p-2">See More</button>
     </a>
     <div class="bg-gray-300 p-5 rounded-[25px] m-2 ">
-      <p>note -> all = xs, sm, md, lg, xl-4xl,none, full, [value]</p>
+      <p>note -> all = xs,  sm, md, lg, xl-4xl,none, full, [value]</p>
       <p>using rounded-xs, sm, md, lg, xl-4xl,none, full, [value]</p>
       <ol class="list-decimal bg-gray-200 p-10 rounded-2xl">
         <p>rounded-2xl in "ol" tag </p>
@@ -131,10 +131,7 @@
       </div>
     </div>
 
-    <!-- https://youtu.be/WvBnTJK7Khk?list=PLSDeUiTMfxW6VChKWb26Z_mPR4f6fAmMV&t=4053  -->
-
     <hr class="my-5">
-
     
     <h2>Sizing! [size-]</h2>
     <a href="https://tailwindcss.com/docs/width" target="_blank">
@@ -207,7 +204,7 @@
       <p class="bg-indigo-300 p-3 my-5 w-[300px]">w-[300px]</p>
     </div>
 
-    <hr class="my-10 h-2 bg-black">
+    <hr class="my-10 h-[2px] bg-black">
     <!-- increasing border thickness
       also using h-1,2,3 thne give bg-color
       h-[3px] bg-gray-200
@@ -217,14 +214,27 @@
       border-t-8 → very thick 
     -->
 
-    <!-- https://youtu.be/WvBnTJK7Khk?list=PLSDeUiTMfxW6VChKWb26Z_mPR4f6fAmMV&t=4415  -->
+    <h2 class="font-bold p-2 bg-red-300">Height (Most of the same options as widths)</h2>
 
-    <h2>Height (Most of the same options as widths)</h2>
     <a href="https://tailwindcss.com/docs/height" target="_blank">
       <button class="p-2 bg-black text-white">See More</button>
     </a>
-    <div class="container bg-amber-500 p-10 mb-10">
-      <p class="bg-amber-300 p-3 my-5"></p>
+    <div class="bg-amber-600 p-10 h-auto ">
+      <p class="bg-amber-400 p-2 mb-5">h-0 = 0px, h-px = 1px, h-0.5= 2px, h-1 = 4px, h-1,2,3-96, h-auto, 1/2 = 50%, 
+                                    1/3 like fractions, [value px], svh, svw, min, max, fit, lh</p>
+      
+      <div class="flex items-end  mb-5 bg-amber-300 p-4 gap-3">
+        <!-- items-end makes them to stick to the bottom  -->
+        <!-- items-start makes them to stick to the top  -->
+        <div class="h-96 bg-sky-100 p-2 rounded-md">h-96</div>
+        <div class="h-80 bg-sky-200 p-2 rounded-md">h-80</div>
+        <div class="h-64 bg-sky-300 p-2 rounded-md">h-64</div>
+        <div class="h-48 bg-sky-400 p-2 rounded-md">h-48</div>
+        <div class="h-40 bg-sky-500 p-2 rounded-md">h-40</div>
+        <div class="h-32 bg-sky-600 p-2 rounded-md">h-32</div>
+        <div class="h-24 bg-sky-700 p-2 text-white rounded-md">h-24</div>
+        <div class="h-[200px] bg-sky-800 text-white p-3 rounded-md">h-[200px]</div>
+      </div>
     </div>
 
     <hr class="my-5">
@@ -234,36 +244,76 @@
       <button class="p-2 bg-black text-white">See More</button>
     </a>
     <div class="container bg-lime-500 p-10 mb-10">
-      <p class="bg-lime-300 p-3 my-5"></p>
+      <p class="bg-lime-200 p-3 my-5">min-h-[number], min-h-px, fraction, full, screen, dvh, dvw, lvh, lvw, svw, auto, min, max, fit, lh</p>
+
+      <div class="h-44 w-64 bg-gray-300 p-3 flex flex-col gap-2 mb-5">
+        <div class="min-h-min bg-lime-400">
+              <p>Using <span class="font-bold">min-h-min</span></p>
+              very very very very long text that will be wrap
+        </div>
+        <div class="min-h-fit bg-lime-400">
+              <p>Using <span class="font-bold">min-h-fit</span></p>
+              very very very very long text that will be wrap
+        </div>
+      </div>
+
+    <h2>min-h-0 and min-w-0</h2>
+    <div class="h-[260px] w-auto flex gap-2 bg-lime-600 mb-5 p-2 ">
+      <div class="p-2 bg-lime-300 flex-1 min-w-0">
+        This is a normal div <br>
+        (default min-height: auto)<br>
+        <span class="text-sky-600">p-2 bg-lime-300 flex-1 min-w-0</span>
+      </div>
+
+      <div class="min-h-0 p-2 bg-lime-400 flex-1 overflow-auto">
+        min-h-0 → allows shrinking inside flex container.
+        <br><br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores illo et repellat laborum aliquid explicabo nostrum perferendis accusantium placeat commodi?
+        <br><br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere eveniet culpa accusamus sunt, suscipit sint omnis incidunt minus ex. Dolores vitae nostrum molestias nobis vel, quod iure excepturi velit corporis possimus voluptatem eligendi dolorum aut repellendus dolor aliquid! Illo repellat reiciendis quod, voluptatem dolores nulla id delectus eos facilis ipsa. Neque cumque pariatur iusto illo officia quas ut qui, modi tenetur? Assumenda corrupti consequatur ipsa voluptatibus, ullam vel adipisci molestiae ea, quia officiis magni in. Similique cum non neque facilis facere repellendus accusantium sequi sit itaque odit sunt adipisci ut corporis voluptas exercitationem magni expedita, quas quae eveniet asperiores modi iusto esse! Molestias nobis similique impedit, adipisci ad rem quibusdam voluptatibus! Repudiandae, quam deleniti. Impedit, quia omnis facere a alias recusandae reiciendis suscipit eveniet, tenetur doloribus nulla nemo! Error, officiis provident nostrum quos consectetur sunt sint sequi. Libero ipsum aliquam sed? Nulla id omnis eius numquam inventore officia odio quia consequuntur ipsa, delectus laudantium voluptatibus quasi. Incidunt fuga suscipit tempora mollitia expedita, reprehenderit natus, libero quaerat et corrupti voluptates nisi exercitationem odio perferendis magni debitis delectus nesciunt at dignissimos illum eligendi porro est quos eveniet. Eius ipsa asperiores tempora sapiente repudiandae non error! Exercitationem, nemo beatae. Iste tempora omnis eaque similique atque? Totam tempore, ea ipsum eius quam vitae aspernatur nemo deserunt labore, minus, veritatis et iste amet recusandae facere reprehenderit aliquam facilis fugit commodi? Nam itaque quia quaerat provident exercitationem beatae earum accusantium porro at facere et laborum, pariatur explicabo, consequatur laboriosam voluptatum veritatis maxime iure eius reprehenderit. Neque nam optio officia porro velit perferendis suscipit nobis voluptates temporibus eos, laboriosam non iusto odio quis mollitia animi natus modi aliquam, esse error quam ipsa! Illum necessitatibus ratione excepturi, atque fugit culpa. Suscipit, earum ex tempore officiis voluptatibus id. Illo omnis harum architecto ex maiores dicta exercitationem ratione ducimus iusto similique praesentium et earum incidunt explicabo placeat quidem, esse hic repellendus officiis eveniet voluptate! In molestiae minus corrupti quos veniam quam unde porro quis sunt labore quod veritatis voluptatum facere voluptatibus, tempore explicabo ducimus natus odit totam sapiente. Neque consequatur quo deserunt saepe iure, fugit a temporibus, nam reiciendis rerum accusantium? Sequi porro rem totam iste dignissimos, impedit libero voluptates illo nulla odio placeat atque. Autem nostrum molestias quod sed harum explicabo dolorem totam fugit ea numquam natus ducimus maiores ratione magnam, eveniet consequatur error ab aliquid nisi doloremque, id quo! Enim at in repellendus voluptas. Dicta natus dignissimos atque.
+      </div>
     </div>
 
-    <hr class="my-5">
+      <div class="p-5 h-[400px] bg-lime-400">
+        <div class="min-h-full bg-lime-200">
+          min-h-full</strong>, so its minimum height becomes 100% of the parent’s content area. 
+          Even though the parent has padding, the inner div still stretches to fill the available height inside it.
+        </div>
+      </div>
+    </div>
+    
+    <!--  | Tailwind class | Height    |
+          | -------------- | --------- |
+          | h-24           | 96px      |
+          | h-32           | 128px     |
+          | h-40           | 160px     |
+          | **h-48**       | **192px** |
+          | h-64           | 256px     | 
+    -->
 
+    <hr class="my-5">
+    
     <h2>Max Height</h2>
     <a href="https://tailwindcss.com/docs/max-height" target="_blank">
       <button class="p-2 bg-black text-white">See More</button>
     </a>
-    <div class="container bg-emerald-500 p-10 mb-10">
-      <p class="bg-emerald-300 p-3 my-5"></p>
+    <p>Using <span class="font-bold">max-h-full</span></p>
+    <div class="bg-emerald-500 mb-10 h-[160px]">
+      <div class="mx-20 p-2 bg-emerald-400 h-48 max-h-full">
+        parent container has h-[160px], and this div has h-48 = 192px, but using max-h-full, this is taking full height of the parent container, also thid div has mx-20
+      </div>
     </div>
 
     <hr class="my-5">
-
-    
+   
     <h2>Full screen height</h2>
     <div class="container bg-sky-500 p-10 mb-10">
-      <p class="bg-sky-300 p-3 my-5"></p>
+      <div class="min-h-screen w-32 mx-auto text-center bg-sky-300">min-h-screen</div>            
     </div>
 
     <hr class="my-5">
 
-
     <h2>Width Auto</h2>
-    <div class="container bg-slate-500 p-10 mb-10">
-      <p class="bg-slate-300 p-3 my-5"></p>
-    </div>
-
-    
-
+    <div class="w-auto bg-slate-300 p-2 mb-10">it will take auto screen or parent container width, w-auto</div>
   </body>
 </html>
