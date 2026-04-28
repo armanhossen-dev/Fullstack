@@ -10,7 +10,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <div class="HTMLCSS">
+        
+        <div class="time">
+            <span id="hr">00</span>:<span id="min">00</span>:<span id="sec">00</span><span class="ampm" data-ampm="AM"></span>
+        </div>
+        <script>
+            function runClock(){
+                const now = new Date();
+                let hr = now.getHours();
+                const min = now.getMinutes();
+                const sec = now.getSeconds();
+
+                const amPm = hr >= 12 ? 'PM' : 'AM';
+                hr = hr % 12 || 12; 
+                
+                document.getElementById('hr').textContent = String(hr).padStart(2, '0');
+                document.getElementById('min').textContent = String(min).padStart(2, '0');
+                document.getElementById('sec').textContent = String(sec).padStart(2, '0');
+                document.getElementById('hr').setAttribute('data-ampm', amPm);
+            }
+            setInterval(runClock, 1000);
+            runClock();
+        </script>
+
     <h2>Basic HTML & CSS
         <a href="https://youtu.be/LzMnsfqjzkA?t=3739" target="_blank">
             <button>Where You left (YOUTUBE)</button>
@@ -107,6 +131,5 @@
     <div class="motiv">
         `For Every Second You Waste, Someone Else is Moving Toward Your Dream 🙂`
     </div>
-
 </body>
 </html>

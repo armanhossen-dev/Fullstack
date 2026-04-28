@@ -73,3 +73,18 @@ button:hover{
     color: white;
     width: 100%;
 }
+
+.time{
+    position: absolute;
+    background-color: #ffffff25;
+    right: 10px;
+    padding: .5rem .9rem;
+    border-radius: 10px;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: white;
+    z-index: 100;
+    margin-top: 10px;
+    border: #e6e6e6 solid 1px;
+}
+.ampm::after { content: '' attr(data-ampm); }
